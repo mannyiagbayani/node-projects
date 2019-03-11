@@ -7,11 +7,11 @@ A collection of NodeJS projects
 run "npm init"
 
 ## Usage
-1. Node-App / Note App
+NODE-APP/NOTE APP
 
 A simple tool to add / delete / read / list all messages stored in json file. It's using YARG and REQUEST packages
    
-eg: sample use
+
 ```
 node app.js --help
 node app.js add --title="nodejs" --description="nodejs sample"
