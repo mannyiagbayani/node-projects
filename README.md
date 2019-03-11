@@ -1,7 +1,7 @@
 # node-projects
 1. Node-App / Note App
-   A simple tool to add / delete / read / list all messages stored in json file.
-   It's using YARG and REQUEST packages
+   # A simple tool to add / delete / read / list all messages stored in json file.
+   # It's using YARG and REQUEST packages
    
    eg: sample use
    node app.js --help
