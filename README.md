@@ -22,7 +22,7 @@ node app.js delete --title="nodejs"
 
 WEATHER APP
 
-Use to get the temperature of a location. It's using REQUEST package.
+Use to get the temperature of a location. It's using REQUEST package and Mapbox and DarkSky for Geozoning.
 
 ```
 node app.js Auckland New Zealand
