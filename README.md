@@ -31,5 +31,8 @@ node app.js Auckland New Zealand
 WEBSERVER APP
 
 A front-end implementation of Weather App with Heroku configuration.
-Check it here: https://manny-weather-app.herokuapp.com/
+Check it here: 
+```
+https://manny-weather-app.herokuapp.com/
+```
 
