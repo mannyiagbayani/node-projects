@@ -1,9 +1,10 @@
 const request = require('request');
 
 const mapbox = (address, callback) => {
-    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=pk.eyJ1IjoibWFubnlpYWdiYXlhbmkiLCJhIjoiY2p0N2g5OWZkMHJ5eDQ5bzZpYm81bmtnciJ9.XQh0jFGdxwXoa28BkrCHuQ`;
+    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=pk.eyJ1IjoibWFubnlpYWdiYXlhbmkiLCJhIjoiY2p0YnppcHBvMGNlNTQ5anpmZzAzbWpjMiJ9.GrbFbVtmYiR5T-ZZozNKEA`;
  
     request({url: url, json: true}, (error,response) => {
+        console.log(response)
         if(error) {
             callback(error, undefined)
         }

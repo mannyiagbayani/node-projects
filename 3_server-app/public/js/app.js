@@ -2,6 +2,7 @@ const address = "!"
 
 
 const forecast =(url,callback) => {
+    console.log(url)
     fetch(url).then(responses => {
         return responses.json().then((response) => {
             if(response.error) {
@@ -33,13 +34,17 @@ const messageTwo = document.querySelector("#messageTwo");
 form.addEventListener('submit',(e) => {
     e.preventDefault();
     const address = searchTextbox.value;
-    const url = `/weather?address=${address}`;
+    //const url = `http://localhost:3000/weatherNZ?address=${address}`;
+    const url = `/weatherNZ?address=${address}`;
+
 
     messageOne.textContent = '';
     messageTwo.textContent = "fetching weather forecast of '" + address + "'"
 
     fetch(url).then(responses => {
+        console.log(url)
         return responses.json().then((response) => {
+            console.log(response)
             if(response.error) {
                 console.log(response.error)
                 messageTwo.textContent = response.error;
