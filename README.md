@@ -22,8 +22,13 @@ node app.js delete --title="nodejs"
 
 WEATHER APP
 
-Use to get the temperature of a location. It's using REQUEST package and Mapbox and DarkSky for Geozoning.
+Use to get the temperature of a location. It's using REQUEST package, Mapbox API and DarkSky API for Geozoning.
 
 ```
 node app.js Auckland New Zealand
 ```
+
+WEBSERVER APP
+
+A front-end implementation of Weather App with Heroku configuration
+

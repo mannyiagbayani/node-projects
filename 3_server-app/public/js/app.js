@@ -33,7 +33,7 @@ const messageTwo = document.querySelector("#messageTwo");
 form.addEventListener('submit',(e) => {
     e.preventDefault();
     const address = searchTextbox.value;
-    const url = `http://localhost:3000/weather?address=${address}`;
+    const url = `/weather?address=${address}`;
 
     messageOne.textContent = '';
     messageTwo.textContent = "fetching weather forecast of '" + address + "'"

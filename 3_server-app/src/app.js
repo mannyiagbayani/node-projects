@@ -5,6 +5,7 @@ const hbs = require("hbs");
 const forecast = require("./util/forecast");
 
 const developer = "Manny Ibasco Agbayani";
+const PORT = process.env.PORT || 3000;
 
 //path for Express Config
 const template_views = path.join(__dirname,"../templates/views");
@@ -89,6 +90,6 @@ app.get ("*", (req, res) => {
     })
 });
 
-app.listen(3000, () => {
-    console.log("listening to port 3000")
+app.listen(PORT, () => {
+    console.log("listening to port " + PORT)
 })
