@@ -9,7 +9,8 @@ const darksky = (latitude, longitude,  callback) => {
              callback(response.error,undefined)
          }
         else {
-            //console.log(response.body.currently)
+            //console.log(response.body.timezone)
+            const timezone = response.body.timezone;
             const currently = response.body.currently;
             const daily = response.body.daily.summary;
             const preciptype = response.body.daily.data[0].precipType;
@@ -18,6 +19,7 @@ const darksky = (latitude, longitude,  callback) => {
             if(preciptype) {
                 forecast += `There is ${currently.precipProbability}% of ${preciptype}.`
             }
+            forecast += "This location is using " + timezone  + " timezone."
             callback(undefined, forecast);
     }
     })

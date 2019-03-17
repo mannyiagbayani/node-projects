@@ -33,8 +33,8 @@ const messageTwo = document.querySelector("#messageTwo");
 
 form.addEventListener('submit',(e) => {
     e.preventDefault();
+
     const address = searchTextbox.value;
-    //const url = `http://localhost:3000/weatherNZ?address=${address}`;
     const url = `/weatherNZ?address=${address}`;
 
 
@@ -42,21 +42,15 @@ form.addEventListener('submit',(e) => {
     messageTwo.textContent = "fetching weather forecast of '" + address + "'"
 
     fetch(url).then(responses => {
-        console.log(url)
+       
         return responses.json().then((response) => {
-            console.log(response)
-            if(response.error) {
-                console.log(response.error)
-                messageTwo.textContent = response.error;
-                
+           
+            if(response.error) {               
+                messageTwo.textContent = response.error;                
             } else {
                 messageTwo.textContent = response.forecast;
                 messageOne.textContent =response.location;
-                searchTextbox.value = ''
-                 console.log(response.forecast)
-                 console.log(response.location)
-                 console.log(response.address)
-                
+                searchTextbox.value = ''                                
             }
             
         })
