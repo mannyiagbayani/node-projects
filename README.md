@@ -70,3 +70,27 @@ https://manny-task-manager-api.herokuapp.com/users
 	"password": "user1-pa$sword"
 }
 ```
+- read user endpoint
+```
+//GET
+https://manny-task-manager-api.herokuapp.com/users/me
+```
+- create user task endpoint
+```
+//POST
+https://manny-task-manager-api.herokuapp.com/tasks
+```
+- create task payload
+
+```
+{
+	"description": "buy lotto tickets",
+	"completed" : false
+}
+```
+
+- read user task endpoint
+```
+//GET
+https://manny-task-manager-api.herokuapp.com/tasks?sortBy=createdAt:asc
+```
