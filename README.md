@@ -32,7 +32,16 @@ WEBSERVER APP
 
 A front-end implementation of Weather App with Heroku configuration.
 Check it here: 
+
+A. Create User
 ```
-https://manny-weather-app.herokuapp.com/
+https://manny-weather-app.herokuapp.com/users
+
+
 ```
 
+TASK MANAGER APP
+An API to create / delete / update task integrated with authentication. 
+```
+https://manny-task-manager-api.herokuapp.com/
+```
