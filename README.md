@@ -41,13 +41,31 @@ https://manny-weather-app.herokuapp.com/
 TASK MANAGER APP
 An API to create / delete / update task integrated with authentication. 
 
-- create user endpoint and payload
+- create user endpoint
 ```
+//POST
 https://manny-task-manager-api.herokuapp.com/users
+```
+- create user payload
 
+```
 {
 	"name":"User 1",
 	"age": 20,
+	"email":"user1@example.com",
+	"password": "user1-pa$sword"
+}
+```
+
+- login user endpoint
+```
+//POST
+https://manny-task-manager-api.herokuapp.com/users
+```
+- login user payload
+
+```
+{
 	"email":"user1@example.com",
 	"password": "user1-pa$sword"
 }
