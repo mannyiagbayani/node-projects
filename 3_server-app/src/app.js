@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const hbs = require("hbs");
+
+//user-defined
 const forecast = require("./util/forecast");
 
 const developer = "Manny Ibasco Agbayani";
